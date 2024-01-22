@@ -2,6 +2,30 @@ import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
 
+/**
+ * `Index` is a functional component that displays the homepage of a portfolio.
+ *
+ * It returns a `Layout` component which contains a header card with a profile image,
+ * name, job title, a brief description, and a 'Hire me!' button. It also includes a 
+ * section for displaying skills, experiences and a portfolio.
+ *
+ * The header card is divided into two columns:
+ * - The first column (col-md-4) contains an image.
+ * - The second column (col-md-8) contains the name, job title, a brief description, 
+ *   and a 'Hire me!' button.
+ *
+ * The skills section maps through an array of `skills` and for each skill, it displays 
+ * the skill name and a progress bar indicating the skill level.
+ *
+ * The experiences section maps through an array of `experiences` and for each experience, 
+ * it displays the title, duration, and description.
+ *
+ * The portfolio section maps through an array of `projects` and for each project, it 
+ * displays an image, name, and description.
+ *
+ * @returns {JSX.Element} A `Layout` component containing the header card with profile details,
+ * skills, experiences, and a portfolio.
+ */
 const Index = () => (
   <Layout>
     {/* Header card */}
