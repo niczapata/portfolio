@@ -34,7 +34,7 @@ const Index = () => (
         <div className="card card-body bg-secondary text-light">
           <div className="row">
             <div className="col-md-4">
-              <img src="nicolas.jpg" className="img-fluid" />
+              <img src="nicolas.jpg" className="img-fluid" alt="Nicolas Zapata" />
             </div>
             <div className="col-md-8">
               <h1>Nicolas Zapata</h1>

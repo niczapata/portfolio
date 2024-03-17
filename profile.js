@@ -37,21 +37,21 @@ export const experiences = [
   {
     title: "TI support at Conviventia",
     description:
-      "Culpa amet qui qui amet id amet dolor fugiat. Nisi aliquip id veniam et laboris dolor. Ea incididunt laboris laboris exercitation culpa est nulla ipsum sint sit.",
+      "I was made for them, a dashboard to automate the entry processes of interns and volunteers within the organization, in addition to presenting proposals that would help the organization in relation to the use of ICT as tools that allow streamlining processes.",
     from: "February 2023",
     to: "April 2023",
   },
   {
     title: "Mobile developer at Vibbo",
     description:
-      "Culpa amet qui qui amet id amet dolor fugiat. Nisi aliquip id veniam et laboris dolor. Ea incididunt laboris laboris exercitation culpa est nulla ipsum sint sit.",
+      "Using Flutter to drive the development of a mobile app. I achieved successfully synchronize data via REST API, extracting information of a PostgreSQL database and FastAPI, for authentication. Besides, I integrated the initial phase of a video conferencing function and implemented the User authentication using Firebase. These achievements highlight my skill in Flutter, API and Firebase integration, demonstrating my ability to convert concepts into functional and innovative mobile applications.",
     from: "February 2023",
     to: "April 2023",
   },
   {
     title: "Mobile Developer at Digital Braily Solutions",
     description:
-      "Culpa amet qui qui amet id amet dolor fugiat. Nisi aliquip id veniam et laboris dolor. Ea incididunt laboris laboris exercitation culpa est nulla ipsum sint sit.",
+      "Development of the Carry-App application chat template, using the React Native tool.",
     from: "February 2023",
     to: "April 2023",
   },
@@ -59,25 +59,23 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "Awesome website",
+    name: "Portfolio",
     description:
-      "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod.",
+      "Personal portfolio webesite that I show my skill, experiencies amd onther information about me.",
     image: "portfolio1.jpeg",
   },
   {
-    name: "Awesome website 2",
-    description:
-      "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod. ",
+    name: "Odoo's Standar Payroll",
+    description: "Standar Payroll Using Odoo Tool",
     image: "portfolio2.jpg",
   },
   {
-    name: "Awesome website 3",
-    description:
-      "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod.",
+    name: "Cats Breed Aplication",
+    description: "Cats Breed Aplication created using React Native Framenwork.",
     image: "portfolio3.png",
   },
   {
-    name: "Awesome website 4",
+    name: "Odoo's Barcode System",
     description:
       "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod. ",
     image: "portfolio4.png",
@@ -101,18 +99,21 @@ export const posts = [
     title: "React",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel ornare nisi, in fringilla nunc. Nullam quis maximus risus. Praesent vel convallis metus, et sagittis sapien. Phasellus id mattis risus. Morbi eget euismod ipsum. Aliquam finibus neque eget cursus faucibus. Donec tincidunt, nibh eu semper lobortis, arcu diam mattis lacus, id mattis diam mi a quam. Maecenas tincidunt orci felis, quis mollis augue mattis vitae. Curabitur ornare ante lacus, ut vestibulum massa bibendum tristique. Mauris a laoreet turpis.",
-    imageURL: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faie.edu.au%2Fwp-content%2Fuploads%2F2018%2F03%2Fgame-programming-03.jpg",
+    imageURL:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faie.edu.au%2Fwp-content%2Fuploads%2F2018%2F03%2Fgame-programming-03.jpg",
   },
   {
     title: "Angular",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel ornare nisi, in fringilla nunc. Nullam quis maximus risus. Praesent vel convallis metus, et sagittis sapien. Phasellus id mattis risus. Morbi eget euismod ipsum. Aliquam finibus neque eget cursus faucibus. Donec tincidunt, nibh eu semper lobortis, arcu diam mattis lacus, id mattis diam mi a quam. Maecenas tincidunt orci felis, quis mollis augue mattis vitae. Curabitur ornare ante lacus, ut vestibulum massa bibendum tristique. Mauris a laoreet turpis.",
-    imageURL: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faie.edu.au%2Fwp-content%2Fuploads%2F2018%2F03%2Fgame-programming-03.jpg",
+    imageURL:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faie.edu.au%2Fwp-content%2Fuploads%2F2018%2F03%2Fgame-programming-03.jpg",
   },
   {
     title: "Vue",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel ornare nisi, in fringilla nunc. Nullam quis maximus risus. Praesent vel convallis metus, et sagittis sapien. Phasellus id mattis risus. Morbi eget euismod ipsum. Aliquam finibus neque eget cursus faucibus. Donec tincidunt, nibh eu semper lobortis, arcu diam mattis lacus, id mattis diam mi a quam. Maecenas tincidunt orci felis, quis mollis augue mattis vitae. Curabitur ornare ante lacus, ut vestibulum massa bibendum tristique. Mauris a laoreet turpis.",
-    imageURL: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faie.edu.au%2Fwp-content%2Fuploads%2F2018%2F03%2Fgame-programming-03.jpg",
+    imageURL:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faie.edu.au%2Fwp-content%2Fuploads%2F2018%2F03%2Fgame-programming-03.jpg",
   },
 ];
