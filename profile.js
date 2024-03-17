@@ -34,6 +34,12 @@ export const skills = [
 ];
 
 export const experiences = [
+    {
+    title: "Odoo Developer at Grupo Quanam Colombia",
+    description: 'Development of Modules for Enterprise Solutions with the Odoo16 Tool.',
+    from: "November 2023",
+    to: "Present",
+  },
   {
     title: "TI support at Conviventia",
     description:

@@ -6,21 +6,21 @@ import Link from "next/link";
  * `Index` is a functional component that displays the homepage of a portfolio.
  *
  * It returns a `Layout` component which contains a header card with a profile image,
- * name, job title, a brief description, and a 'Hire me!' button. It also includes a 
+ * name, job title, a brief description, and a 'Hire me!' button. It also includes a
  * section for displaying skills, experiences and a portfolio.
  *
  * The header card is divided into two columns:
  * - The first column (col-md-4) contains an image.
- * - The second column (col-md-8) contains the name, job title, a brief description, 
+ * - The second column (col-md-8) contains the name, job title, a brief description,
  *   and a 'Hire me!' button.
  *
- * The skills section maps through an array of `skills` and for each skill, it displays 
+ * The skills section maps through an array of `skills` and for each skill, it displays
  * the skill name and a progress bar indicating the skill level.
  *
- * The experiences section maps through an array of `experiences` and for each experience, 
+ * The experiences section maps through an array of `experiences` and for each experience,
  * it displays the title, duration, and description.
  *
- * The portfolio section maps through an array of `projects` and for each project, it 
+ * The portfolio section maps through an array of `projects` and for each project, it
  * displays an image, name, and description.
  *
  * @returns {JSX.Element} A `Layout` component containing the header card with profile details,
@@ -34,18 +34,25 @@ const Index = () => (
         <div className="card card-body bg-secondary text-light">
           <div className="row">
             <div className="col-md-4">
-              <img src="nicolas.jpg" className="img-fluid" alt="Nicolas Zapata" />
+              <img
+                src="nicolas.jpg"
+                className="img-fluid"
+                alt="Nicolas Zapata"
+              />
             </div>
             <div className="col-md-8">
               <h1>Nicolas Zapata</h1>
               <h3>Software Engineer</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                distinctio sapiente, nesciunt omnis dolores asperiores, adipisci
-                doloribus ut id ipsa est voluptatem quidem assumenda numquam
-                reprehenderit cupiditate sequi recusandae autem!
+                I am a computer engineer with over 4 years of experience in
+                mobile development on Android using Android Studio, Kotlin, and
+                Java. I also have knowledge in React Native and Flutter.
+                Additionally, I have over 4 years of experience in backend
+                development on Node.js with JavaScript. I have worked on several
+                Machine Learning projects and am interested in continuing to
+                learn more about this area.
               </p>
-              <a href="/hireme">Hire me!</a>
+              <a href="https://www.linkedin.com/in/nicolas-zapata-alzate/">Hire me!</a>
             </div>
           </div>
         </div>
