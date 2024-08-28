@@ -60,10 +60,10 @@ useEffect(() => {
       </main>
 
       {footer && (
-        <footer className="bg-dark text-light text-center">
+        <footer className="bg-primary text-light text-center">
           <div className="container p-4">
-            <h1>&copy; Nicolás Zapata Portfolio</h1>
-            <p>2018 - {new Date().getFullYear()}</p>
+            <h1>&copy; Nicolás Zapata Alzate's Portfolio</h1>
+            <p>{new Date().getFullYear()}</p>
             <p>All rights reserve</p>
             <p>This page was create with React using Next.js</p>
           </div>

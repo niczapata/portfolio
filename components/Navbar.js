@@ -15,10 +15,10 @@ import Link from "next/link";
  */
 const Navbar = () => (
   // Navigation bar with Bootstrap classes
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <nav className="navbar navbar-expand-lg bg-primary-tertiary">
     <div className="container">
       {/* Link to the home page */}
-      <Link className="navbar-brand" href="/">
+      <Link className="navbar-brand text-light" href="/">
         Portfolio
       </Link>
       {/* Button to toggle navigation menu */}
@@ -38,17 +38,19 @@ const Navbar = () => (
         <ul className="navbar-nav ms-auto">
           {/* Link to the Github page */}
           <li className="nav-item">
-            <Link href="/github" className="nav-link">
+            <Link href="/github" className="nav-link text-light">
               Github
             </Link>
           </li>
           {/* Link to the Blog page */}
-          <li className="nav-item">
-            <Link href="/blog" className="nav-link">
-                Blog
-            </Link>
-          </li>
-        </ul>
+          {/* 
+            <li className="nav-item">
+              <Link href="/blog" className="nav-link">
+                  Blog
+              </Link>
+            </li>
+         */}
+       </ul>
       </div>
     </div>
   </nav>

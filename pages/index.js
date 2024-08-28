@@ -36,7 +36,7 @@ const Index = () => (
             <div className="col-md-4">
               <img
                 src="nicolas.jpg"
-                className="img-fluid"
+                className="rounded img-fluid"
                 alt="Nicolas Zapata"
               />
             </div>
@@ -44,27 +44,39 @@ const Index = () => (
               <h1>Nicolas Zapata</h1>
               <h3>Software Engineer</h3>
               <p>
-                I am a computer engineer with over 4 years of experience in
-                mobile development on Android using Android Studio, Kotlin, and
-                Java. I also have knowledge in React Native and Flutter.
-                Additionally, I have over 4 years of experience in backend
-                development on Node.js with JavaScript. I have worked on several
-                Machine Learning projects and am interested in continuing to
-                learn more about this area.
+                I am a informatic engineer with a lot of years developing
+                pieces of software for diferent enviroments such as Mobile 📱, Desktop💻 and Web🌐.
+                I have much knoledge in a lot of programming lenguages, frameworks and libraries 🧠🤓.
+
               </p>
-              <a href="https://www.linkedin.com/in/nicolas-zapata-alzate/">Hire me!</a>
+              <p>
+                I started in the Java development🍵, I did a Carreer on Platzi so I learned Java for personal
+                and enterprise uses, equals in Android development, I did few courses there too.
+             </p>
+             <p>
+               This lastest years, I started to develop in Python🐍 and JavaScript, I was interested in the 
+               Data Scients so I did a lot of projects with my classmates when I was in the university🧑‍🔬, after, I got my first formal 
+               job as Developer after I finished my bachelor, we did a lot of custom modules in Odoo using Python, 
+               XML, Sass, and JavaScript🏢.
+             </p>
+                <a href="https://www.linkedin.com/in/nicolas-zapata-alzate/">
+                  <img src="linkedin.png" alt="Linkedin_header" className="img-fluid" />
+                  Watch my Linkedin!🤓
+                </a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
+    <br/>
+
     {/* Second section */}
     <div className="row">
       <div className="col-md-4">
         <div className="card bg-light">
           <div className="card-body">
-            <h1>Skills</h1>
+            <h1>Skills💪</h1>
             {skills.map(({ skill, percentage }, i) => (
               <div className="py-3" key={i}>
                 <h5>{skill}</h5>
@@ -86,7 +98,7 @@ const Index = () => (
       <div className="col-md-8">
         <div className="card bg-light">
           <div className="card-body">
-            <h1>Experience</h1>
+            <h1>Experience👨‍💻</h1>
             <ul>
               {experiences.map(({ title, from, to, description }, index) => (
                 <li key={index}>
@@ -98,13 +110,18 @@ const Index = () => (
                 </li>
               ))}
             </ul>
-            <Link href="/experiences" className="btn btn-light">
-              Know More
-            </Link>
-          </div>
+            <div>
+              <Link href="/experiences" className="btn btn-primary">
+              <img src="linkedin.png" alt="Linkedin" className="img-fluid" />
+                Know More about My Experience in my Linkedin
+              </Link>
+            </div>
+         </div>
         </div>
       </div>
     </div>
+
+    <br/>
 
     {/* Portfolio */}
     <div className="row">
@@ -112,9 +129,9 @@ const Index = () => (
         <div className="card card-body bg-light">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="text-center text-light">Portfolio</h1>
+              <h1 className="text-center text-dark">My Projects📎🤙</h1>
             </div>
-            {projects.map(({ name, description, image }, i) => (
+            {projects.map(({ name, description, image, repo }, i) => (
               <div className="col-md-4 p-2" key={i}>
                 <div className="card h-100">
                   <div className="overflow">
@@ -123,14 +140,18 @@ const Index = () => (
                   <div className="card-body">
                     <h3>{name}</h3>
                     <p>{description}</p>
-                    <Link href="">Know More</Link>
+                    <Link className="btn btn-outline-light" href={`${repo}`}>
+                      <img src="github.png" alt="Github" className="img-fluid" />
+                      Watch Repository
+                    </Link>
                   </div>
                 </div>
               </div>
             ))}
             <div className="text-center">
-              <Link href="/portfolio" className="btn btn-outline-light">
-                More Projects
+              <Link href="https://github.com/NicolasZapata?tab=repositories" className="btn btn-outline-light">
+                <img src="github.png" alt="Github" className="img-fluid" />
+                Watch More Projects in my GitHub!
               </Link>
             </div>
           </div>

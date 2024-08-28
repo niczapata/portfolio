@@ -10,9 +10,9 @@ const Github = ({ user, statusCode }) => {
     <Layout footer={false}>
       <div className="row">
         <div className="col-md-4 offset-md-4">
-          <div className="card card-body text-light text-center bg-dark" >
+          <div className="card card-body text-light text-center bg-secondary" >
             <h1>{user.name}</h1>
-            <img src={user.avatar_url} alt="" />
+            <img className="rounded" src={user.avatar_url} alt="" />
             <p>{user.bio}</p>
             <a
               href={user.html_url}

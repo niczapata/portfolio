@@ -20,10 +20,6 @@ export const skills = [
     percentage: 85,
   },
   {
-    skill: "Flutter",
-    percentage: 80,
-  },
-  {
     skill: "Kotlin",
     percentage: 80,
   },
@@ -43,66 +39,70 @@ export const experiences = [
     description:
       "Development of Modules for Enterprise Solutions with the Odoo16 Tool.",
     from: "November 2023",
-    to: "Present",
+    to: "May 2024",
   },
   {
     title: "TI support at Conviventia",
     description:
-      "I was made for them, a dashboard to automate the entry processes of interns and volunteers within the organization, in addition to presenting proposals that would help the organization in relation to the use of ICT as tools that allow streamlining processes.",
+      "We made an dashboard to automate the entry processes of interns and volunteers. In fact, we helped the company to grow in technology uses and automatization on their process.",
     from: "February 2023",
     to: "April 2023",
   },
   {
     title: "Mobile developer at Vibbo",
     description:
-      "Using Flutter to drive the development of a mobile app. I achieved successfully synchronize data via REST API, extracting information of a PostgreSQL database and FastAPI, for authentication. Besides, I integrated the initial phase of a video conferencing function and implemented the User authentication using Firebase. These achievements highlight my skill in Flutter, API and Firebase integration, demonstrating my ability to convert concepts into functional and innovative mobile applications.",
+      "Using Flutter to drive the development of a mobile app. We achieved successfully synchronize data via REST API, extracting information of a PostgreSQL database and FastAPI, for authentication. Besides, We integrated the initial phase of a video conferencing function and implemented the User authentication using Firebase. These achievements highlight my skill in Flutter, API and Firebase integration",
     from: "February 2023",
     to: "April 2023",
   },
   {
     title: "Mobile Developer at Digital Braily Solutions",
     description:
-      "Development of the Carry-App application chat template, using the React Native tool.",
+      "We made the Carry-App application chat template, Using React Native, we did the chat section successfully.",
     from: "February 2023",
     to: "April 2023",
   },
 ];
 
 export const projects = [
+  // {
+  //   name: "Portfolio",
+  //   description:
+  //     "Personal portfolio webesite that I show my skill, experiencies amd onther information about me.",
+  //   image: "portfolio1.jpeg",
+  // },
   {
-    name: "Portfolio",
+    name: "Odoo's Personalized Payroll",
+    description: "Personalized Odoo Payroll. We reused an 14 version Payroll made previously by another developemnt team, and we maked some features and we maked it adaptable for 16 version.",
+    image: "odoo_payroll.png",
+    repo: "https://github.com/NicolasZapata/payroll_quanamco/",
+  },
+  {
+    name: "Cats Breed Aplication😺",
+    description: "Cats Breed Aplication, I used the Bred Cats public API, and also it was made using React Native.",
+    image: "breedcats.png.jpg",
+    repo: "https://github.com/NicolasZapata/CatBreedApp",
+  },
+  {
+    name: "Odoo Barcode System",
     description:
-      "Personal portfolio webesite that I show my skill, experiencies amd onther information about me.",
-    image: "portfolio1.jpeg",
+      "We made an custom model based in an barcode generator based in numbers sirial keys such as the number of the product, the brand, the category and etc.",
+    image: "barcode_odoo.jpeg",
+    repo: "https://github.com/NicolasZapata/barcode_quanamco",
   },
   {
-    name: "Odoo's Standar Payroll",
-    description: "Standar Payroll Using Odoo Tool",
-    image: "portfolio2.jpg",
-  },
-  {
-    name: "Cats Breed Aplication",
-    description: "Cats Breed Aplication created using React Native Framenwork.",
-    image: "portfolio3.png",
-  },
-  {
-    name: "Odoo's Barcode System",
+    name: "Odoo Weight Reception",
     description:
-      "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod. ",
-    image: "portfolio4.png",
+      "Custom model made for calculate the weight an cargament of products based their production to travel.",
+    image: "wr_odoo.jpeg",
+    repo: "https://github.com/NicolasZapata/weighing_reception",
   },
-  {
-    name: "Awesome website 5",
-    description:
-      "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod.",
-    image: "portfolio5.jpeg",
-  },
-  {
-    name: "Awesome website 6",
-    description:
-      "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod.",
-    image: "portfolio6.jpeg",
-  },
+  // {
+  //   name: "Awesome website 6",
+  //   description:
+  //     "Ut ipsum laborum quis incididunt amet pariatur ut. Ea adipisicing cupidatat amet irure voluptate laboris aliquip eu minim in qui ad pariatur eiusmod.",
+  //   image: "portfolio6.jpeg",
+  // },
 ];
 
 export const posts = [
