@@ -10,7 +10,7 @@ const custom404 = () => (
     <div className="text-center"> {/* Center the content */}
       <h1>404</h1> {/* Display the 404 heading */}
       <p>
-        This page dont exist, please return to <Link href="/Home">Home</Link> {/* Display the message and a link to the Home page */}
+        This page dont exist, please return to <Link href="/">Home</Link> {/* Display the message and a link to the Home page */}
       </p>
     </div>
   </Layout>
