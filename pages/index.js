@@ -56,7 +56,7 @@ const Index = () => (
              <p>
                This lastest years, I started to develop in Python🐍 and JavaScript, I was interested in the 
                Data Scients so I did a lot of projects with my classmates when I was in the university🧑‍🔬, after, I got my first formal 
-               job as Developer after I finished my bachelor, we did a lot of custom modules in Odoo using Python, 
+               job as Developer after finished my bachelor, we did a lot of custom modules in Odoo using Python, 
                XML, Sass, and JavaScript🏢.
              </p>
                 <a href="https://www.linkedin.com/in/nicolas-zapata-alzate/">

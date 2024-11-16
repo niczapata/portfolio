@@ -30,7 +30,9 @@ COPY --link . .
 FROM base
 
 # Copy built application
+COPY --from=build /components /components
 COPY --from=build /pages /pages
+COPY --from=build /public /public
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
