@@ -44,32 +44,39 @@ const Index = () => (
               <h1>Nicolas Zapata</h1>
               <h3>Software Engineer</h3>
               <p>
-                I am a informatic engineer with a lot of years developing
-                pieces of software for diferent enviroments such as Mobile 📱, Desktop💻 and Web🌐.
-                I have much knoledge in a lot of programming lenguages, frameworks and libraries 🧠🤓.
-
+                I am a informatic engineer with a lot of years developing pieces
+                of software for diferent enviroments such as Mobile 📱,
+                Desktop💻 and Web🌐. I have much knoledge in a lot of
+                programming lenguages, frameworks and libraries 🧠🤓.
               </p>
               <p>
-                I started in the Java development🍵, I did a Carreer on Platzi so I learned Java for personal
-                and enterprise uses, equals in Android development, I did few courses there too.
-             </p>
-             <p>
-               This lastest years, I started to develop in Python🐍 and JavaScript, I was interested in the 
-               Data Scients so I did a lot of projects with my classmates when I was in the university🧑‍🔬, after, I got my first formal 
-               job as Developer after finished my bachelor, we did a lot of custom modules in Odoo using Python, 
-               XML, Sass, and JavaScript🏢.
-             </p>
-                <a href="https://www.linkedin.com/in/nicolas-zapata-alzate/">
-                  <img src="linkedin.png" alt="Linkedin_header" className="img-fluid" />
-                  Watch my Linkedin!🤓
-                </a>
+                I started in the Java development🍵, I did a Carreer on Platzi
+                so I learned Java for personal and enterprise uses, equals in
+                Android development, I did few courses there too.
+              </p>
+              <p>
+                This lastest years, I started to develop in Python🐍 and
+                JavaScript, I was interested in the Data Scients so I did a lot
+                of projects with my classmates when I was in the university🧑‍🔬,
+                after, I got my first formal job as Developer after finished my
+                bachelor, we did a lot of custom modules in Odoo using Python,
+                XML, Sass, and JavaScript🏢.
+              </p>
+              <a href="https://www.linkedin.com/in/nicolas-zapata-alzate/">
+                <img
+                  src="linkedin.png"
+                  alt="Linkedin_header"
+                  className="img-fluid"
+                />
+                Watch my Linkedin!🤓
+              </a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <br/>
+    <br />
 
     {/* Second section */}
     <div className="row">
@@ -111,17 +118,21 @@ const Index = () => (
               ))}
             </ul>
             <div>
-              <Link href="/experiences" className="btn btn-primary">
-              <img src="linkedin.png" alt="Linkedin" className="img-fluid" />
+              <Link
+                href="https://www.linkedin.com/in/nicolas-zapata-al/"
+                target="_blank"
+                className="btn btn-primary"
+              >
+                <img src="linkedin.png" alt="Linkedin" className="img-fluid" />
                 Know More about My Experience in my Linkedin
               </Link>
             </div>
-         </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <br/>
+    <br />
 
     {/* Portfolio */}
     <div className="row">
@@ -140,8 +151,16 @@ const Index = () => (
                   <div className="card-body">
                     <h3>{name}</h3>
                     <p>{description}</p>
-                    <Link className="btn btn-outline-light" href={`${repo}`}>
-                      <img src="github.png" alt="Github" className="img-fluid" />
+                    <Link
+                      className="btn btn-outline-light"
+                      href={`${repo}`}
+                      target="_blank"
+                    >
+                      <img
+                        src="github.png"
+                        alt="Github"
+                        className="img-fluid"
+                      />
                       Watch Repository
                     </Link>
                   </div>
@@ -149,7 +168,11 @@ const Index = () => (
               </div>
             ))}
             <div className="text-center">
-              <Link href="https://github.com/NicolasZapata?tab=repositories" className="btn btn-outline-light">
+              <Link
+                href="https://github.com/niczapata?tab=repositories"
+                className="btn btn-outline-light"
+                target="_blank"
+              >
                 <img src="github.png" alt="Github" className="img-fluid" />
                 Watch More Projects in my GitHub!
               </Link>
