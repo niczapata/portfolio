@@ -59,7 +59,7 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
             <h1>&copy; Nicolás Zapata Alzate's Portfolio</h1>
             <p>{new Date().getFullYear()}</p>
             <p>All rights reserve</p>
-            <p>This page was create with React using Next.js</p>
+            <p>This page was made with React using Next.js</p>
           </div>
         </footer>
       )}
