@@ -30,6 +30,13 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
    * @param {type} url - The URL of the new route when a route change starts.
    */
   useEffect(() => {
+    /**
+     * This is an event handler function that is called when a route change starts
+     * (i.e. when the user navigates to a new page). It logs the URL of the new
+     * route and starts the nProgress loading bar.
+     *
+     * @param {string} url - The URL of the new route.
+     */
     const handleRouteChange = (url) => {
       console.log(url);
       nProgress.start();
