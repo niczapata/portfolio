@@ -9,8 +9,8 @@ export default function Resume() {
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Spanish Resume</h5>
-              <p class="card-text">Resumen wrotten in Spanish</p>
+              <h5 class="card-title">🇪🇸 Spanish Resume</h5>
+              <p class="card-text">Resume wrotten in Spanish</p>
               <a href="/es_cv.pdf" download={true} class="btn btn-primary">
                 Download
               </a>
@@ -20,8 +20,8 @@ export default function Resume() {
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">English Resume</h5>
-              <p class="card-text">Resumen wrotten in English</p>
+              <h5 class="card-title">🇬🇧 English Resume</h5>
+              <p class="card-text">Resume wrotten in English</p>
               <a href="/en_cv.pdf" download={true} class="btn btn-primary">
                 Download
               </a>
