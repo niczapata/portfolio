@@ -35,6 +35,13 @@ export const skills = [
 
 export const experiences = [
   {
+    title: "QA Engineer at Efigas",
+    description:
+      "Designed and implemented the automated testing strategy for Efigas' commercial platforms (Conecta CRM and the Services Portfolio form). Built E2E suites with Playwright, Cypress and Selenium + pytest using the Page Object Model, data-driven tests from CSV datasets, API checks, role-based access matrices, CI pipelines on GitLab and written test plans with bug regression specs and QA audits per release.",
+    from: "May 2026",
+    to: "Present",
+  },
+  {
     title: "Odoo Developer at Grupo Quanam Colombia",
     description:
       "Development of Modules for Enterprise Solutions with the Odoo16 Tool.",
