@@ -35,7 +35,7 @@ const Index = () => (
           <div className="row">
             <div className="col-md-4">
               <img
-                src="nicolas.jpg"
+                src="/nicolas.jpg"
                 className="rounded img-fluid"
                 alt="Nicolas Zapata"
               />
@@ -44,19 +44,19 @@ const Index = () => (
               <h1>Nicolas Zapata</h1>
               <h3>Software Engineer</h3>
               <p>
-                I am a informatic engineer with a lot of years developing pieces
-                of software for diferent enviroments such as Mobile 📱,
-                Desktop💻 and Web🌐. I have much knoledge in a lot of
-                programming lenguages, frameworks and libraries 🧠🤓.
+                I am an informatics engineer with many years developing pieces
+                of software for different environments such as Mobile 📱,
+                Desktop💻 and Web🌐. I have much knowledge of many
+                programming languages, frameworks and libraries 🧠🤓.
               </p>
               <p>
-                I started in the Java development🍵, I did a Carreer on Platzi
+                I started in the Java development🍵, I did a career on Platzi
                 so I learned Java for personal and enterprise uses, equals in
                 Android development, I did few courses there too.
               </p>
               <p>
-                This lastest years, I started to develop in Python🐍 and
-                JavaScript, I was interested in the Data Scients so I did a lot
+                This latest years, I started to develop in Python🐍 and
+                JavaScript, I was interested in the Data Science so I did a lot
                 of projects with my classmates when I was in the university🧑‍🔬,
                 after, I got my first formal job as Developer after finished my
                 bachelor, we did a lot of custom modules in Odoo using Python,
@@ -64,8 +64,8 @@ const Index = () => (
               </p>
               <a href="https://www.linkedin.com/in/nicolas-zapata-alzate/">
                 <img
-                  src="linkedin.png"
-                  alt="Linkedin_header"
+                  src="/linkedin.png"
+                  alt="Linkedin"
                   className="img-fluid"
                 />
                 Watch my Linkedin!🤓
@@ -92,7 +92,7 @@ const Index = () => (
                     className="progress-bar"
                     role="progressbar"
                     style={{ width: `${percentage}%` }}
-                    aria-valuenow="50"
+                    aria-valuenow={percentage}
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
@@ -123,7 +123,7 @@ const Index = () => (
                 target="_blank"
                 className="btn btn-primary"
               >
-                <img src="linkedin.png" alt="Linkedin" className="img-fluid" />
+                <img src="/linkedin.png" alt="Linkedin" className="img-fluid" />
                 Know More about My Experience in my Linkedin
               </Link>
             </div>
@@ -146,7 +146,7 @@ const Index = () => (
               <div className="col-md-4 p-2" key={i}>
                 <div className="card h-100">
                   <div className="overflow">
-                    <img src={`/${image}`} alt="" className="card-img-top" />
+                    <img src={`/${image}`} alt={name} className="card-img-top" />
                   </div>
                   <div className="card-body">
                     <h3>{name}</h3>
@@ -157,7 +157,7 @@ const Index = () => (
                       target="_blank"
                     >
                       <img
-                        src="github.png"
+                        src="/github.png"
                         alt="Github"
                         className="img-fluid"
                       />
@@ -173,7 +173,7 @@ const Index = () => (
                 className="btn btn-outline-light"
                 target="_blank"
               >
-                <img src="github.png" alt="Github" className="img-fluid" />
+                <img src="/github.png" alt="Github" className="img-fluid" />
                 Watch More Projects in my GitHub!
               </Link>
             </div>

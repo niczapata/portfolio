@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import nProgress from "nprogress";
 
 /**
@@ -37,21 +38,25 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
      *
      * @param {string} url - The URL of the new route.
      */
-    const handleRouteChange = (url) => {
-      console.log(url);
-      nProgress.start();
-    };
+    const handleStart = () => nProgress.start();
+    const handleDone = () => nProgress.done();
 
-    router.events.on("routeChangeStart", handleRouteChange);
-    router.events.on("routeChangeComplete", () => nProgress.done());
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleDone);
+    router.events.on("routeChangeError", handleDone);
     return () => {
-      router.events.off("routeChangeStart", handleRouteChange);
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleDone);
+      router.events.off("routeChangeError", handleDone);
     };
-  }, []);
+  }, [router.events]);
 
   // Render the layout with the specified components and properties
   return (
     <div className={dark ? "bg-dark" : ""}>
+      <Head>
+        <title>{title ? `${title} | Nicolás Zapata` : "Nicolás Zapata | Portfolio"}</title>
+      </Head>
       <Navbar />
 
       <main className="container py-4">
@@ -65,7 +70,7 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
           <div className="container p-4">
             <h1>&copy; Nicolás Zapata Alzate's Portfolio</h1>
             <p>{new Date().getFullYear()}</p>
-            <p>All rights reserve</p>
+            <p>All rights reserved</p>
             <p>This page was made with React using Next.js</p>
           </div>
         </footer>

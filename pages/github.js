@@ -1,33 +1,45 @@
 import Layout from "../components/Layout";
-import Error from "./_error";
+import { social } from "../profile";
 
 /**
- * GitHub profile page component for Next.js applications.
- * 
- * Displays a user's GitHub profile information including name, avatar, bio,
- * and a link to their GitHub account. If an error occurs during data fetching,
- * it renders the custom error page.
- * 
- * @param {Object} props - Component props
- * @param {Object} props.user - GitHub user data object
- * @param {number} [props.statusCode] - HTTP status code from data fetching (if error)
- * @returns {JSX.Element} Rendered GitHub profile page or error component
+ * Social profiles page: GitHub card (live data from the GitHub API, with a
+ * static fallback if the request fails) and a LinkedIn card.
+ *
+ * @param {Object} props
+ * @param {Object|null} props.user - GitHub user data, or null if the fetch failed
  */
-const Github = ({ user, statusCode }) => {
-  if (statusCode) {
-    return <Error />;
-  }
+const Github = ({ user }) => {
+  const gh = {
+    name: user?.name || social.github.name,
+    bio: user?.bio || social.github.bio,
+    url: user?.html_url || social.github.url,
+    avatar: user?.avatar_url || null,
+  };
 
   return (
-    <Layout footer={false}>
-      <div className="row">
-        <div className="col-md-4 offset-md-4">
-          <div className="card card-body text-light text-center bg-secondary">
-            <h1>{user.name}</h1>
-            <img className="rounded" src={user.avatar_url} alt="" />
-            <p>{user.bio}</p>
-            <a href={user.html_url} target="_blank" className="btn btn-primary">
-              Go to my account!
+    <Layout footer={false} title="Find me online">
+      <div className="row py-4">
+        <div className="col-md-4 offset-md-2 mb-3">
+          <div className="card card-body h-100 text-light text-center bg-secondary">
+            <h1>{gh.name}</h1>
+            {gh.avatar ? (
+              <img className="rounded img-fluid" src={gh.avatar} alt={`${gh.name} avatar`} />
+            ) : (
+              <img className="img-fluid mx-auto" src="/github.png" alt="GitHub" style={{ maxWidth: 120 }} />
+            )}
+            <p className="mt-3">{gh.bio}</p>
+            <a href={gh.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
+              Go to my GitHub!
+            </a>
+          </div>
+        </div>
+        <div className="col-md-4 mb-3">
+          <div className="card card-body h-100 text-light text-center bg-secondary">
+            <h1>{social.linkedin.name}</h1>
+            <img className="img-fluid mx-auto" src="/linkedin.png" alt="LinkedIn" style={{ maxWidth: 120 }} />
+            <p className="mt-3">{social.linkedin.headline}</p>
+            <a href={social.linkedin.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
+              Go to my LinkedIn!
             </a>
           </div>
         </div>
@@ -37,27 +49,17 @@ const Github = ({ user, statusCode }) => {
 };
 
 /**
- * Next.js server-side data fetching function for GitHub profile data.
- * 
- * Fetches user data from GitHub API for the specified username ('niczapata').
- * Returns the fetched data and status code as props to the page component.
- * 
- * @returns {Promise<Object>} Promise that resolves to an object containing:
- *   props: { 
- *     user: Object - GitHub user data,
- *     statusCode: number | boolean - HTTP status code if error, otherwise false
- *   }
+ * Fetches the GitHub profile. Never throws: on failure `user` is null and the
+ * page falls back to static data from profile.js.
  */
 export async function getServerSideProps() {
-  const res = await fetch("https://api.github.com/users/niczapata");
-  const data = await res.json();
-  const statusCode = res.status > 200 ? res.status : false;
-  return {
-    props: {
-      user: data,
-      statusCode,
-    },
-  };
+  try {
+    const res = await fetch("https://api.github.com/users/niczapata");
+    if (!res.ok) return { props: { user: null } };
+    return { props: { user: await res.json() } };
+  } catch {
+    return { props: { user: null } };
+  }
 }
 
 export default Github;

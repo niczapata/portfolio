@@ -30,8 +30,8 @@ const PostCard = ({ post: { imageURL, title, content } }) => (
       <div className="card-body">
         <h1>{title}</h1>
         <p>{content}</p>
-        <Link href={`/post?title=${title}`} as={`/post/${title}`}>
-          <a className="btn btn-light">Read</a>
+        <Link href={`/post?title=${encodeURIComponent(title)}`} className="btn btn-light">
+          Read
         </Link>
       </div>
     </div>

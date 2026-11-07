@@ -128,3 +128,18 @@ export const posts = [
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faie.edu.au%2Fwp-content%2Fuploads%2F2018%2F03%2Fgame-programming-03.jpg",
   },
 ];
+
+// Static fallback data so the social cards always render, even if the GitHub API fails.
+export const social = {
+  github: {
+    name: "Nicolás Zapata",
+    username: "niczapata",
+    bio: "Software Engineer",
+    url: "https://github.com/niczapata",
+  },
+  linkedin: {
+    name: "Nicolás Zapata Alzate",
+    headline: "Software Engineer",
+    url: "https://www.linkedin.com/in/nicolas-zapata-al/",
+  },
+};

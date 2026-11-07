@@ -1,29 +1,33 @@
-import { useRouter } from "next/router"
-import { posts } from "../profile"
-import Layout from "../components/Layout"
+import { useRouter } from "next/router";
+import { posts } from "../profile";
+import Layout from "../components/Layout";
+import Link from "next/link";
 
 /**
- * Post component
- * 
- * This component displays the content of a single post.
+ * Post page: shows a single post selected via the `title` query parameter.
  */
-
 const Post = () => {
-  // Get the router object for navigation
   const router = useRouter();
-  
-  // Find the current post based on the title from the router query
-  //const currentPost = posts.find(post => post.title === router.query.title);
-  //
-  //// Return the layout with the current post content
-  //return (
-  //  <Layout footer={false} title={currentPost.title} >
-  //    <div className="text-center">
-  //      <img src={currentPost.imageURL} className="img-fluid" style={{width: '50%'}} />
-  //      <p>{currentPost.content}</p>
-  //    </div>
-  //  </Layout>
-  //);
-}
+  const currentPost = posts.find((post) => post.title === router.query.title);
 
-export default Post
+  if (!currentPost) {
+    return (
+      <Layout footer={false} title="Post not found">
+        <p className="text-center">
+          <Link href="/blog">Back to the blog</Link>
+        </p>
+      </Layout>
+    );
+  }
+
+  return (
+    <Layout footer={false} title={currentPost.title}>
+      <div className="text-center">
+        <img src={currentPost.imageURL} className="img-fluid" style={{ width: "50%" }} alt={currentPost.title} />
+        <p>{currentPost.content}</p>
+      </div>
+    </Layout>
+  );
+};
+
+export default Post;
