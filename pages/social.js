@@ -8,7 +8,7 @@ import { social } from "../profile";
  * @param {Object} props
  * @param {Object|null} props.user - GitHub user data, or null if the fetch failed
  */
-const Github = ({ user }) => {
+const Social = ({ user }) => {
   const gh = {
     name: user?.name || social.github.name,
     bio: user?.bio || social.github.bio,
@@ -62,4 +62,4 @@ export async function getServerSideProps() {
   }
 }
 
-export default Github;
+export default Social;

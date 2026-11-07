@@ -7,11 +7,11 @@ import Link from "next/link";
  * homepage. It also includes a toggle button for collapsing and expanding the
  * navigation links on smaller screens.
  *
- * The navigation links include 'Github' and 'Blog'. 'Github' links to the '/github'
- * route and 'Blog' links to the '/blog' route. The links are displayed on the right
+ * The navigation links include 'Social' and 'Resume'. 'Social' links to the '/social'
+ * route and 'Resume' links to the '/resume' route. The links are displayed on the right
  * side of the navigation bar due to the 'ms-auto' class.
  *
- * @returns {JSX.Element} A navigation bar with a brand logo and links to 'Github' and 'Blog'.
+ * @returns {JSX.Element} A navigation bar with a brand logo and links to 'Social' and 'Resume'.
  */
 const Navbar = () => (
   // Navigation bar with Bootstrap classes
@@ -39,7 +39,7 @@ const Navbar = () => (
           {/* Link to the Github page */}
           {/* <li className="nav-item"> */}
           <li className="nav-item">
-            <Link href="/github" className="nav-link text-light">
+            <Link href="/social" className="nav-link text-light">
               Social
             </Link>
           </li>
