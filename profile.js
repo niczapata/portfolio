@@ -44,7 +44,7 @@ export const experiences = [
   {
     title: "Odoo Developer at Grupo Quanam Colombia",
     description:
-      "Development of Modules for Enterprise Solutions with the Odoo16 Tool.",
+      "Developed custom modules for enterprise solutions on Odoo 16 (Python, XML views, security rules and es_CO translations). Migrated and extended a Colombian payroll localization originally built for Odoo 14, adding features such as contract extensions, loans, overtime, vacations, leaves, novelties, retirement and multi-company support, and adapting it to version 16. Built an automatic barcode generator for storage products that combines category, class, material, brand and reference codes into a structured 13-digit code with sequence management. Created a weighing reception module that records product weights during incoming inspections, integrated with Odoo inventory and with printable reports.",
     from: "November 2023",
     to: "May 2024",
   },
