@@ -40,22 +40,12 @@ const Navbar = () => (
           {/* <li className="nav-item"> */}
           <li className="nav-item">
             <Link href="/github" className="nav-link text-light">
-              Github
+              Social
             </Link>
           </li>
           <li className="nav-item">
             <Link href="/resume" className="nav-link text-light">
               Resume
-            </Link>
-          </li>
-          {/* Link to the Linkedin page */}
-          <li className="nav-item">
-            <Link
-              href="https://www.linkedin.com/in/nicolas-zapata-al/"
-              target="_blank"
-              className="nav-link text-light"
-            >
-              Linkedin
             </Link>
           </li>
         </ul>
