@@ -72,6 +72,30 @@ export const experiences = [
 ];
 
 export const projects = [
+  {
+    name: "Conecta CRM · E2E with Playwright",
+    description:
+      "End-to-end and API test suite in Playwright + TypeScript for a commercial CRM. Role-based access matrix, per-work-item verification docs, QA audits with go/no-go verdicts, CI on GitLab and a flakiness ledger.",
+    image: "qa_playwright.svg",
+  },
+  {
+    name: "Conecta CRM · Cypress Suite",
+    description:
+      "Cypress E2E suite covering 10+ CRM modules with 76+ test cases using the Page Object Model, bug-specific regression specs, form wizard automation and an exported test case matrix (CSV and Excel).",
+    image: "qa_cypress.svg",
+  },
+  {
+    name: "Services Portfolio · Selenium + pytest",
+    description:
+      "Automated tests for a natural gas service request form with Selenium WebDriver and pytest. Page Object Model, a REST client for department, city and neighborhood lookups, 41 documented test cases and bulk tests parametrized from CSV datasets of 40+ users.",
+    image: "qa_selenium.svg",
+  },
+  {
+    name: "Tickelia · API Contract Tests",
+    description:
+      "Browser-less Playwright + TypeScript contract tests against an API gateway (/api/v1) while the frontend was still being built. Each work item is verified from a markdown source of truth for bugs and features.",
+    image: "qa_api.svg",
+  },
   // {
   //   name: "Portfolio",
   //   description:

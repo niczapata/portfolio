@@ -151,18 +151,20 @@ const Index = () => (
                   <div className="card-body">
                     <h3>{name}</h3>
                     <p>{description}</p>
-                    <Link
-                      className="btn btn-outline-light"
-                      href={`${repo}`}
-                      target="_blank"
-                    >
-                      <img
-                        src="/github.png"
-                        alt="Github"
-                        className="img-fluid"
-                      />
-                      Watch Repository
-                    </Link>
+                    {repo && (
+                      <Link
+                        className="btn btn-outline-light"
+                        href={`${repo}`}
+                        target="_blank"
+                      >
+                        <img
+                          src="/github.png"
+                          alt="Github"
+                          className="img-fluid"
+                        />
+                        Watch Repository
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
